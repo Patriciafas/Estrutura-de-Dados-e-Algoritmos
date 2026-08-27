@@ -7,11 +7,54 @@ public class Lista<T>{
         this(null);
     }
 
-    public Lista (String nomeLista){
+    public Lista(String nomeLista){
         this.nomeLista = nomeLista;
-        this.primeiroNo = Null;
-        this.ultimoNo = Null;
+        this.primeiroNo = null;
+        this.ultimoNo = null;
     }
+
+    public void addInicio(T dado){
+        No<T> novoNo = new No<T>(dado);
+
+        if(primeiroNo == null){
+            primeiroNo = novoNo;
+            ultimoNo = novoNo;
+        } else {
+            novoNo.setNextNo(primeiroNo);
+            primeiroNo = novoNo;
+        }
+    }
+
+    public void removeInicio(){
+        if(primeiroNo == null){
+            System.out.println("Lista vazia!");
+        } else {
+            System.out.println("Dado: " + primeiroNo.getDado() + " removido!");
+
+            if(primeiroNo == ultimoNo){
+                primeiroNo = primeiroNo.getNextNo();
+                ultimoNo = ultimoNo.getNextNo();
+            } else {
+                primeiroNo = primeiroNo.getNextNo();
+            }
+        }
+    }
+
+    public void imprimeLista(){
+        if(primeiroNo == null){
+            System.out.println("Lista vazia!");
+        } else{
+            System.out.println("Dados da Lista " + getNomeLista());
+            No<T> aux = primeiroNo;
+            while (aux != null) {
+                System.out.println(aux.toString());
+                aux = aux.getNextNo();
+            }
+        }
+    }
+
+
+
 
     public void setNomeLista(String nomeLista){
         this.nomeLista = nomeLista;
@@ -29,7 +72,7 @@ public class Lista<T>{
         return this.primeiroNo;
     }
 
-    public void setUltimoNo (No<T> ultimoNo){
+    public void setUltimoNo(No<T> ultimoNo){
         this.ultimoNo = ultimoNo;
     }
 
