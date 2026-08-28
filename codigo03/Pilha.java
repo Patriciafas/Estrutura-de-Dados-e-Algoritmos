@@ -1,0 +1,24 @@
+public class Pilha {
+    private String nomePilha;
+    private No<T> topo;
+
+    public Pilha(){
+        this("");
+    }
+    public Pilha(String nomePilha){
+        this.nomePilha = nomePilha;
+        this.topo = null;
+    }
+    public void setnomePilha(Sting nomePilha){
+        this.nomePilha = nomePilha;
+    }
+    public String getNomePilha(){
+        return this.nomePilha;
+    }
+    public void setTopo(No<T> topo){
+        this.topo = topo;
+    }
+    public No<T> getTopo(){
+        return this.topo;
+    }
+}
