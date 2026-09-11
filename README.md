@@ -1,4 +1,7 @@
 # Estrutura-de-Dados-e-Algoritmos
+COMANDO PARA RODAR = javac *.java
+java Principal 
+
 >>LAÇO DA PILHA EXPLICACAO: topo e igual a null? NAO, entao topo NEXTGETNO, topo e igual a null, SIM entao topo null -- pilha vazia
 >>NO tem um dado tipo T no caso do codigo 03, ele guarda este dado 
 >>AUX referencia para imprimir estes dados que estao nos NOS
