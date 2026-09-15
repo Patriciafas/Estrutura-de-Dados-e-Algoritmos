@@ -14,6 +14,10 @@ PUSH -- EMPILHA
 POP -- REMOVE
 PEEK -- APONTA E RETORNA O ELEMENTO
 
+pilha.push("B") insere "B" no topo da pilha
+pilha.peek() retorna o elemento do topo sem removê-lo → imprime B, e o elemento continua na pilha
+pilha.pop() retorna o elemento do topo e o remove → imprime B novamente, mas agora a pilha fica vazia.
+
 >>STACK -- CRIA OS PONTEIROS (NOS)<<
 >>HEEP -- CRIA OS DADOS REAIS QUE SERAO APRESENTADOS PELOS PONTEIROS<<
 

@@ -22,7 +22,7 @@ public class No<T>{
     public void setNextNo(No<T> nextNo){
         this.nextNo = nextNo;
     }
-
+javac 
     public No<T> getNextNo(){
         return this.nextNo;
     }
