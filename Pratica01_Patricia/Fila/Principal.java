@@ -5,6 +5,11 @@ public class Principal{
         fila.enfileirar("Patricia");
         fila.enfileirar("João");
         fila.enfileirar("Julia");
+        
+        fila.desenfileirar();
+        fila.enfileirar("Francis");
+        fila.enfileirar("Helio");
+
 
         fila.imprimeFila();
     }
